@@ -3,6 +3,9 @@ pipeline {
         docker {
             image 'node:6-alpine' 
         }
+    environment {
+	HOME= '.'
+    }
     }
     stages {
         stage('Build') { 
